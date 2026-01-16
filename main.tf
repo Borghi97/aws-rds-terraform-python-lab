@@ -5,7 +5,7 @@ resource "aws_db_instance" "default" {
   db_name              = "meu_banco_sre"
   engine               = "mysql"
   engine_version       = "8.0"
-  instance_class       = "db.t3.micro" # Elegível para Free Tier
+  instance_class       = "db.t3.micro" # Free Tier
   username             = "admin"
   password             = var.db_password
   parameter_group_name = "default.mysql8.0"
